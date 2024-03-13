@@ -17,7 +17,7 @@ spec:
       - name: myapp
         image: quay.io/jpkroehling/generate-span-java:0.1.0
       - name: agent
-        image: otel/opentelemetry-collector:0.86.0
+        image: otel/opentelemetry-collector:0.83.0
         args:
         - --config=/conf/agent.yaml
         volumeMounts:
