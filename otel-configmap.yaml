@@ -3,6 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: collector-config
+  namespace: otel-normal
 data:
   collector.yaml: |
     receivers:
@@ -23,6 +24,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: agent-config
+  namespace: otel-normal
 data:
   agent.yaml: |
     receivers:
